@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "@components/cards/Card";
 import { servicesData } from "@constants/index";
 function Cards() {

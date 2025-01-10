@@ -1,5 +1,5 @@
 import Cards from '@components/cards/Cards'
-import React from 'react'
+
 
 function Services() {
   return (
