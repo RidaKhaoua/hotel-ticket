@@ -11,5 +11,5 @@ export default defineConfig({
     }
   },
   plugins: [react()],
-  base: "/hotel-tickets/"
+  base: "/hotel-ticket/"
 })
