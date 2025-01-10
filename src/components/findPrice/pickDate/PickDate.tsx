@@ -8,7 +8,7 @@ function PickDate() {
       <div className="flex flex-wrap gap-3 max-lg:mb-5">
         <Date
           name="Arrival Date"
-          className="max-lg:rounded-l-md max-lg:border-r-0 max-md:w-full "
+          className="max-lg:rounded-l-md  max-md:w-full "
         />
         <Date
           name="Deparature Date"

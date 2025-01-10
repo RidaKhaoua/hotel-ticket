@@ -1,11 +1,8 @@
 import { MdShoppingBag } from "react-icons/md";
 import { IoTicketSharp } from "react-icons/io5";
 import { IoBed } from "react-icons/io5";
-import { THotelAndResorts, TRoomsAndGuestData } from "src/types";
-
-import img_1 from "@assets/img-1.jpg";
-import img_2 from "@assets/img-2.jpg";
-import img_3 from "@assets/img-3.jpg";
+import { THotelAndResorts, TRoomsAndGuestData, TService } from "src/types";
+import { img_1, img_2, img_3 } from "@assets/index";
 
 export const links = [
   {
@@ -27,7 +24,7 @@ export const roomsAndGuestData: TRoomsAndGuestData[] = [
   },
 ];
 
-export const servicesData = [
+export const servicesData: TService[] = [
   {
     id: 1,
     title: "Hotel rooms with a good price",

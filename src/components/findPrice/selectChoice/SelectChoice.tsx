@@ -11,7 +11,7 @@ function SelectChoice() {
               data={hotelAndResortsData}
               renderItems={(item) => {
                 return (
-                  <option key={item} className="capitalize">
+                  <option key={item} className="capitalize"value={item}>
                     {item}
                   </option>
                 );
@@ -25,8 +25,7 @@ function SelectChoice() {
               data={roomsAndGuestData}
               renderItems={(item) => {
                 return (
-                  <option key={item.name}>
-                    <span>{<item.icon />}</span>
+                  <option key={item.name} value={item.name}>
                     {item.name}
                   </option>
                 );
