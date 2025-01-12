@@ -10,7 +10,7 @@ function Cards<T>({ data, renderItems, className }: TCards<T>) {
   const renderData = data.map((item, index) => <>{renderItems(item, index)}</>);
 
   return (
-    <div className={clsx("w-full max-w-5xl mx-auto", className)}>
+    <div className={clsx("w-[88%] mx-auto ", className)}>
       {renderData}
     </div>
   );
