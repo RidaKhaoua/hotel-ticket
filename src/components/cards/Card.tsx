@@ -24,7 +24,7 @@ function Card({
   return (
     <div
       className={clsx(
-        "relative flex flex-col justify-between  h-[500px] mb-4 max-md:mb-14",
+        "relative flex flex-col justify-between min-h-[580px] mb-4  max-md:mb-14",
         className
       )}>
       {date && <CardDate date={date} />}
