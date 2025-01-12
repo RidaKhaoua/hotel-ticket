@@ -5,3 +5,8 @@ body {
 .img-head {
   clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 77%, 70% 100%, 30% 100%, 0 76%, 0% 30%);
 }
+
+.border-b-raduis {
+  border-bottom-left-radius: 100% 14%;
+  border-bottom-right-radius: 100% 14%;
+}

@@ -1,26 +1,44 @@
 import Button from "@components/ui/Button";
+import clsx from "clsx";
+import React from "react";
+import CardDate from "./CardDate";
 
 type TCard = {
   id?: number;
   title: string;
   description: string;
-  img: string;
   btnText: string;
+  className?: string;
+  children: React.ReactNode;
+  date?: string;
 };
 
-function Card({ title, description, img, btnText }: TCard) {
+function Card({
+  title,
+  description,
+  children,
+  btnText,
+  className,
+  date,
+}: TCard) {
   return (
-    <div className=" md:flex flex-col justify-between px-3  h-[500px] max-md:mb-14">
+    <div
+      className={clsx(
+        "relative flex flex-col justify-between  h-[500px] mb-4 max-md:mb-14",
+        className
+      )}>
+      {date && <CardDate date={date} />}
       <div>
-        <img className="w-full  rounded-md mb-5" src={img} alt="" />
-        <div className="px-3">
+        {children}
+        <div className="px-7">
           <h4 className="text-[#323A5B] font-bold max-w-[18ch] text-xl mb-2 ">
             {title}
           </h4>
           <p className="text-[#707381]  max-lg:mb-7">{description}</p>
         </div>
       </div>
-      <Button className="border-2 self-end  border-[#3E67BB] text-[#356DCF] w-3/4 block mr-auto ml-auto rounded-full py-1 font-bold">
+      <Button className="border-2 self-end  border-[#3E67BB] text-[#356DCF] w-3/4 outline-none
+       block mr-auto ml-auto rounded-full py-1 font-bold hover:bg-[#3F65B6] hover:text-white duration-300">
         {btnText}
       </Button>
     </div>

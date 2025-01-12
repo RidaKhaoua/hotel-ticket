@@ -1,8 +1,9 @@
 import { MdShoppingBag } from "react-icons/md";
 import { IoTicketSharp } from "react-icons/io5";
 import { IoBed } from "react-icons/io5";
-import { THotelAndResorts, TRoomsAndGuestData, TService } from "src/types";
+import { THotelAndResorts, TRoomsAndGuestData, TCard } from "@types";
 import { img_1, img_2, img_3 } from "@assets/index";
+
 
 export const links = [
   {
@@ -24,7 +25,7 @@ export const roomsAndGuestData: TRoomsAndGuestData[] = [
   },
 ];
 
-export const servicesData: TService[] = [
+export const servicesData: TCard[] = [
   {
     id: 1,
     title: "Hotel rooms with a good price",
@@ -49,5 +50,45 @@ export const servicesData: TService[] = [
     description:
       "Book you fairytale stay at the newly reimagined Disneyland Hotel, the ultimate five-star royal residence",
     btnLabel: "Find out more",
+  },
+];
+
+export const experienceData : TCard[]  =  [
+  {
+    id: 1,
+    title: "Hotel rooms with a good price",
+    img: img_1,
+    description:
+      "Book you fairytale stay at the newly reimagined Disneyland Hotel, the ultimate five-star royal residence",
+    btnLabel: "Find out more",
+    date: "Unitil 9 January 2025"
+  },
+  {
+    id: 2,
+    title: "Hotel rooms with a good price",
+    img: img_2,
+    description: `Attetion recruits! Prepare to assemble for Marvel Avengers Campus in 
+      Walt Disney Studios Park. Discover epic attractions, 
+      experiences and your favourite Marvel Super Heroes`,
+    btnLabel: "Find out more",
+    date: "From 10 January 2025"
+  },
+  {
+    id: 3,
+    title: "Hotel rooms with a good price",
+    img: img_3,
+    description:
+      "Book you fairytale stay at the newly reimagined Disneyland Hotel, the ultimate five-star royal residence",
+    btnLabel: "Find out more",
+    date: "Back on  17 January 2025"
+  },
+  {
+    id: 3,
+    title: "Hotel rooms with a good price",
+    img: img_3,
+    description:
+      "Book you fairytale stay at the newly reimagined Disneyland Hotel, the ultimate five-star royal residence",
+    btnLabel: "Find out more",
+    date:"new"
   },
 ];
