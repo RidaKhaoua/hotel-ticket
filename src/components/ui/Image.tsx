@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import React, { HTMLAttributes } from 'react'
+import  { HTMLAttributes } from 'react'
 
 interface IMage extends HTMLAttributes<HTMLImageElement> {
     className?: string,
