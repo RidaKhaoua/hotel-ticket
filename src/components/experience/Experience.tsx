@@ -3,6 +3,8 @@ import Cards from "@components/cards/Cards";
 import Image from "@components/ui/Image";
 import { experienceData } from "@constants/index";
 import { IoIosArrowForward } from "react-icons/io";
+import {v4 as uuid} from "uuid"
+
 import clsx from "clsx";
 
 function Experience() {
@@ -25,16 +27,18 @@ function Experience() {
           rounded-full max-lg:hidden cursor-pointer scale-95 hover:scale-100 duration-300">
           <IoIosArrowForward />
         </div>
+        
         <Cards
-          className="flex items-center justify-between max-lg:flex-wrap gap-6 overflow-hidden py-4 w-[90%]"
+          className="flex items-center justify-between max-lg:flex-wrap 
+          gap-6 overflow-hidden py-4 w-[90%]"
           data={experienceData}
           renderItems={(item, index) => (
             <Card
-              key={index}
+              key={uuid()}
               {...item}
               btnText={item.btnLabel}
               className={clsx(
-                "bg-white px-0 rounded-md pb-3 w-[320px] shrink-0 ",
+                "bg-white px-0 rounded-md pb-3 w-[320px] shrink-0 mx-auto",
                 index < 3 ? "opacity-100" : "lg:opacity-70"
               )}>
               <Image
